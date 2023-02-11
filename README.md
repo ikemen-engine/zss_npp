@@ -8,8 +8,6 @@ Notepad++ can syntax highlight files with the .zss extension using this user-def
 
 ## Installing
 
-After downloading the xml file, follow the steps described below.
-
 After downloading the XML file, follow the steps described below:
 
 1. Open Notepad++.
