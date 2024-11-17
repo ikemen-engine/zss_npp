@@ -1,3 +1,4 @@
+# Auto Completion
 ## Installation
 1. Open Notepad++'s folder, and then locate "autoCompletion" folder.
 
