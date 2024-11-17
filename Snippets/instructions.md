@@ -1,3 +1,4 @@
+# SCTRL Snippets
 ## Plugin Installation
 * (Note): if your using the portable version of notepad++, sometimes, the plugin admin does not work properly.
 if that's your case the try opening plugins folder, and copying the plugin there.
