@@ -1,13 +1,11 @@
 ## Instalation
 1. Open UDL Dialog: "Language>User Defined Language>Define Your Language".
 
-2. Click "import", and select zss.xml,
+2. Click "import", and load the "zss.xml" file.
 	
 ![import](images/import.png)
 
 3. Restart Notepad++.
-
-4. Done!
 
 ## Updating
 1. Delete your current version of ZSS: "Language>User Defined Language>Define Your Language"
@@ -17,7 +15,6 @@
 
 3. Restart Notepad++.
 
-4. Done!
 
 
 
