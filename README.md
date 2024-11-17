@@ -1,7 +1,8 @@
 # ZSS (Zantei State Script) syntax highlighting for Notepad++
 ***
 This is a set of tools for writing ZSS(Zantei State Script) using Notepad++. This pack contains a set of 4 tools.
-Note: You Have to update your current ZSS Syntax for all the tools to work properly.
+
+```Note: You Have to update your current ZSS Syntax for all the tools to work properly.```
 
 ![An example Screenshot](example_screenshot.png)
 
