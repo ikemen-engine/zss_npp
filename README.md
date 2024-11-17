@@ -19,7 +19,7 @@ Each folder contains a tool and a set of instructions on how to install it and u
 ### ZSS Syntax
 * The ZSS Syntax UDL for Notepad++.
 
-[ZSS Syntax Installation](ZSS%20Syntax/instructions.md)
+[ZSS Syntax Update/Installation](ZSS%20Syntax/instructions.md)
 
 ### ZSS Auto-Completion.
 * A set of auto-completion keywords and functions mainly aimed to cover triggers.
