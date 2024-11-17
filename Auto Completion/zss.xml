@@ -1,0 +1,1141 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NotepadPlus>
+	<AutoComplete>
+		<KeyWord name="teamLeader"/>
+		<KeyWord name="SCA"/>
+		<KeyWord name="NA, NP, NT,"/>		
+		<KeyWord name="SA, SP, ST,"/>		
+		<KeyWord name="HA, HP, HT,"/>
+		<KeyWord name="AA, AP, AT,"/>
+		<KeyWord name="Function" />
+		<KeyWord name="player" func="yes">
+			<Overload retVal="{redirect}" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="helper" func="yes">
+			<Overload retVal="{redirect}" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fightScreenVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: info.localcoord.x, round.ctrl.time (etc...);
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns information about the 
+fight screen (commonly referred to as 'lifebars').
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="
+-(all params):
+-info.author, info.localcoord.x, info.localcoord.y, info.name, round.ctrl.time, 
+round.over.hittime, round.over.time, round.over.waittime, round.over.wintime, 
+round.slow.time, round.start.waittime, time.framespercount.">
+			<Param name="info.author" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="info.localcoord.y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="info.author" />
+		<KeyWord name="info.localcoord.x" />
+		<KeyWord name="info.localcoord.y" />
+		<KeyWord name="info.name" />
+		<KeyWord name="round.ctrl.time" />
+		<KeyWord name="round.over.hittime" />
+		<KeyWord name="round.over.time" />
+		<KeyWord name="round.over.waittime" />
+		<KeyWord name="round.over.wintime" />
+		<KeyWord name="round.slow.time" />
+		<KeyWord name="round.start.waittime" />
+		<KeyWord name="time.framespercount" />
+		<KeyWord name="redirectId" />
+		<KeyWord name="const" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="data.life"/>
+		<KeyWord name="data.power"/>
+		<KeyWord name="data.attack"/>
+		<KeyWord name="data.defence"/>
+		<KeyWord name="data.fall.defence_mul"/>
+		<KeyWord name="data.liedown.time"/>
+		<KeyWord name="data.airjuggle"/>
+		<KeyWord name="data.sparkno"/>
+		<KeyWord name="data.guard.sparkno"/>
+		<KeyWord name="data.KO.echo"/>
+		<KeyWord name="data.IntPersistIndex"/>
+		<KeyWord name="data.FloatPersistIndex"/>
+		<KeyWord name="size.xscale"/>
+		<KeyWord name="size.yscale"/>
+		<KeyWord name="size.ground.back"/>
+		<KeyWord name="size.ground.front"/>
+		<KeyWord name="size.air.back"/>
+		<KeyWord name="size.air.front"/>
+		<KeyWord name="size.height"/>
+		<KeyWord name="size.attack.dist"/>
+		<KeyWord name="size.proj.attack.dist"/>
+		<KeyWord name="size.proj.doscale"/>
+		<KeyWord name="size.head.pos.x"/>
+		<KeyWord name="size.head.pos.y"/>
+		<KeyWord name="size.mid.pos.x"/>
+		<KeyWord name="size.mid.pos.y"/>
+		<KeyWord name="size.shadowoffset"/>
+		<KeyWord name="size.draw.offset.x"/>
+		<KeyWord name="size.draw.offset.y"/>
+		<KeyWord name="velocity.walk.fwd.x"/>
+		<KeyWord name="velocity.walk.back.x"/>
+		<KeyWord name="velocity.run.fwd.x"/>
+		<KeyWord name="velocity.run.fwd.y"/>
+		<KeyWord name="velocity.run.back.x"/>
+		<KeyWord name="velocity.run.back.y"/>
+		<KeyWord name="velocity.jump.y"/>
+		<KeyWord name="velocity.jump.neu.x"/>
+		<KeyWord name="velocity.jump.back.x"/>
+		<KeyWord name="velocity.jump.fwd.x"/>
+		<KeyWord name="velocity.runjump.back.x"/>
+		<KeyWord name="velocity.runjump.fwd.x"/>
+		<KeyWord name="velocity.airjump.y"/>
+		<KeyWord name="velocity.airjump.neu.x"/>
+		<KeyWord name="velocity.airjump.back.x"/>
+		<KeyWord name="velocity.airjump.fwd.x"/>
+		<KeyWord name="velocity.air.gethit.groundrecover.x"/>
+		<KeyWord name="velocity.air.gethit.groundrecover.y"/>
+		<KeyWord name="velocity.air.gethit.airrecover.mul.x"/>
+		<KeyWord name="velocity.air.gethit.airrecover.mul.y"/>
+		<KeyWord name="velocity.air.gethit.airrecover.add.x"/>
+		<KeyWord name="velocity.air.gethit.airrecover.add.y"/>
+		<KeyWord name="velocity.air.gethit.airrecover.back"/>
+		<KeyWord name="velocity.air.gethit.airrecover.fwd"/>
+		<KeyWord name="velocity.air.gethit.airrecover.up"/>
+		<KeyWord name="velocity.air.gethit.airrecover.down"/>
+		<KeyWord name="movement.airjump.num"/>
+		<KeyWord name="movement.airjump.height"/>
+		<KeyWord name="movement.yaccel"/>
+		<KeyWord name="movement.stand.friction"/>
+		<KeyWord name="movement.crouch.friction"/>
+		<KeyWord name="movement.stand.friction.threshold"/>
+		<KeyWord name="movement.crouch.friction.threshold"/>
+		<KeyWord name="movement.jump.changeanim.threshold"/>
+		<KeyWord name="movement.air.gethit.groundlevel"/>
+		<KeyWord name="movement.air.gethit.groundrecover.ground.threshold"/>
+		<KeyWord name="movement.air.gethit.groundrecover.groundlevel"/>
+		<KeyWord name="movement.air.gethit.airrecover.threshold"/>
+		<KeyWord name="movement.air.gethit.airrecover.yaccel"/>
+		<KeyWord name="movement.air.gethit.trip.groundlevel"/>
+		<KeyWord name="movement.down.bounce.offset.x"/>
+		<KeyWord name="movement.down.bounce.offset.y"/>
+		<KeyWord name="movement.down.bounce.yaccel"/>
+		<KeyWord name="movement.down.bounce.groundlevel"/>
+		<KeyWord name="movement.down.friction.threshold"/>
+		<KeyWord name="data.dizzypoints"/>
+		<KeyWord name="data.fall.defence_up"/>
+		<KeyWord name="data.guardpoints"/>
+		<KeyWord name="data.guardsound.channel"/>
+		<KeyWord name="data.hitsound.channel"/>
+		<KeyWord name="size.height.crouch"/>
+		<KeyWord name="size.height.air.top"/>
+		<KeyWord name="size.height.air.bottom"/>
+		<KeyWord name="size.height.down"/>
+		<KeyWord name="size.z.enable"/>
+		<KeyWord name="velocity.air.gethit.ko.add"/>
+		<KeyWord name="velocity.air.gethit.ko.add.x"/>
+		<KeyWord name="velocity.air.gethit.ko.add.y"/>
+		<KeyWord name="velocity.air.gethit.ko.add.z"/>
+		<KeyWord name="velocity.air.gethit.ko.ymin"/>
+		<KeyWord name="velocity.ground.gethit.ko.xmul"/>
+		<KeyWord name="velocity.ground.gethit.ko.add"/>
+		<KeyWord name="velocity.ground.gethit.ko.add.x"/>
+		<KeyWord name="velocity.ground.gethit.ko.add.y"/>
+		<KeyWord name="velocity.ground.gethit.ko.add.z"/>
+		<KeyWord name="velocity.ground.gethit.ko.ymin"/>
+		<KeyWord name="map" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ifElse" func="yes">
+			<Overload retVal="" descr="
+-[exp_cond]: Expression to test;
+-[exp_true]: Expression;
+-[exp_false]: Expression;
+				-(click arrows for description)">
+			<Param name="exp_cond" />
+			<Param name="exp_true" />
+			<Param name="exp_false" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-This trigger takes three arguments. If the first is nonzero, 
+IfElse returns the value of the second argument. 
+Else, it returns the value of the third argument
+					-(click arrows for examples)">
+			<Param name="exp_cond" />
+			<Param name="exp_true" />
+			<Param name="exp_false" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="animelem = 5" />
+			<Param name="15" />
+			<Param name="25" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="abs" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="root" />
+		<KeyWord name="floor" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sin" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pi" />
+		<KeyWord name="cos" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="case" />
+		<KeyWord name="switch" />
+		<KeyWord name="if" />
+		<KeyWord name="let" />
+		<KeyWord name="screenWidth" />
+		<KeyWord name="screenHeight" />
+		<KeyWord name="teamSide" />
+		<KeyWord name="time" />
+		<KeyWord name="clsnVar" func="yes">
+			<Overload retVal="" descr=" 
+-[value_type]: clsn1, clsn2, and size;
+-[index]: Expression;
+-[elem]: front, top, and bottom;
+						-(click arrows for description)">
+			<Param name="value_type" />
+			<Param name="index" />
+			<Param name="elem" />
+			</Overload>
+			<Overload retVal="" descr="	
+!-Returns the specified CLSN coordinate 
+from the specified CLSN index.
+						-(click arrows for examples)">
+			<Param name="value_type" />
+			<Param name="index" />
+			<Param name="elem" />
+			</Overload>				
+			<Overload retVal="(Example 1):" descr="">
+			<Param name="clsn1" />
+			<Param name="0" />
+			<Param name="bottom" />
+			</Overload>			
+			<Overload retVal="(Example 2):" descr="">
+			<Param name="clsn2" />
+			<Param name="1" />
+			<Param name="top" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="aILevel"/>
+		<KeyWord name="alive"/>
+		<KeyWord name="anim"/>
+		<KeyWord name="animElem"/>
+		<KeyWord name="animElemNo" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression that evaluates to the time offset;
+				-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns the number of the animation element in the current action 
+that would be displayed at the specified time.
+				-(click arrows for examples)">
+			<Param name="exprn"/>
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="0" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animElemTime" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression that evaluates to the element number to check;
+						-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+<Overload retVal="" descr="
+!-Gets the animation-time elapsed since the start 
+of a specified element of the current animation action.
+						-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>
+			<Overload retVal="(Example 1):" descr="">
+			<Param name="5" />
+			</Overload>			
+			<Overload retVal="(Example 2):" descr="">
+			<Param name="const(attackframe)" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="animExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animTime"/>
+		<KeyWord name="asin" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="atan" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="authorName"/>
+		<KeyWord name="backEdgeBodyDist"/>
+		<KeyWord name="backEdgeDist"/>
+		<KeyWord name="canRecover"/>
+		<KeyWord name="break"/>
+		<KeyWord name="continue"/>
+		<KeyWord name="ceil" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="command"/>
+		<KeyWord name="cond" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exp_cond" />
+			<Param name="exp_true" />
+			<Param name="exp_false" />
+			</Overload>
+		</KeyWord>
+		
+		<KeyWord name="const240p" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression containing the value to convert;
+			-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="" descr="Converts a value from the 240p coordinate 
+space to the player's coordinate space.
+			-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="3" />
+			</Overload>
+		</KeyWord>
+				
+		<KeyWord name="const480p" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression containing the value to convert;
+			-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="" descr="Converts a value from the 480p coordinate 
+space to the player's coordinate space.
+			-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="6" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="const720p" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression containing the value to convert;
+			-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="" descr="Converts a value from the 720p coordinate 
+space to the player's coordinate space.
+			-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="12" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="Const1080p" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: Expression containing the value to convert;
+			-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="" descr="Converts a value from the 1080p coordinate 
+space to the player's coordinate space.
+			-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="12" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ctrl"/>
+		<KeyWord name="drawGame"/>
+		<KeyWord name="exp" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="facing"/>
+		<KeyWord name="frontEdgeBodyDist"/>
+		<KeyWord name="frontEdgeDist"/>
+		<KeyWord name="fVar" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="gameHeight"/>
+		<KeyWord name="gameTime"/>
+		<KeyWord name="gameWidth"/>
+		<KeyWord name="getHitVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: xveladd, id, score, type, xaccel (etc...);
+				-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>
+			<Overload retVal="" descr="
+!-When the player is in a gethit state, returns the
+ value of the specified hit parameter.
+				-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>	
+			<Overload retVal="(Example 1): " descr="
+-(params  A-F):
+-airtype, animtype, chainid, ctrltime, damage, fall,
+fall.damage, fall.envshake.ampl, fall.envshake.freq,
+fall.envshake.phase, fall.envshake.time, fall.kill, 
+fall.recover, fall.recovertime, fall.xvel, fall.yvel, 
+fallcount, frame.
+				-(click arrows for all params)">
+			<Param name="id" />
+			</Overload>						
+			<Overload retVal="(Example 2): " descr="
+-(params  G-Z)
+groundtype, guarded, hitcount, hitshaketime, hittime,
+id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
+ yoff, ype, yvel.">
+			<Param name="damage" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="xveladd"/>
+		<KeyWord name="yveladd"/>
+		<KeyWord name="type"/>
+		<KeyWord name="animtype"/>
+		<KeyWord name="airtype"/>
+		<KeyWord name="groundtype"/>
+		<KeyWord name="damage"/>
+		<KeyWord name="hitcount"/>
+		<KeyWord name="fallcount"/>
+		<KeyWord name="hitshaketime"/>
+		<KeyWord name="hittime"/>
+		<KeyWord name="slidetime"/>
+		<KeyWord name="ctrltime"/>
+		<KeyWord name="recovertime"/>
+		<KeyWord name="xoff"/>
+		<KeyWord name="yoff"/>
+		<KeyWord name="xvel"/>
+		<KeyWord name="yvel"/>
+		<KeyWord name="yaccel"/>
+		<KeyWord name="chainid"/>
+		<KeyWord name="guarded"/>
+		<KeyWord name="isbound"/>
+		<KeyWord name="fall"/>
+		<KeyWord name="fall.damage"/>
+		<KeyWord name="fall.xvel"/>
+		<KeyWord name="fall.yvel"/>
+		<KeyWord name="fall.recover"/>
+		<KeyWord name="fall.recovertime"/>
+		<KeyWord name="fall.kill"/>
+		<KeyWord name="fall.envshake.time"/>
+		<KeyWord name="fall.envshake.freq"/>
+		<KeyWord name="fall.envshake.ampl"/>
+		<KeyWord name="fall.envshake.phase"/>
+		<KeyWord name="hitCount"/>
+		<KeyWord name="hitDefAttr"/>
+		<KeyWord name="hitFall"/>
+		<KeyWord name="hitOver"/>
+		<KeyWord name="hitPauseTime"/>
+		<KeyWord name="hitShakeOver"/>
+		<KeyWord name="hitVel"/>
+		<KeyWord name="id"/>
+		<KeyWord name="inGuardDist"/>
+		<KeyWord name="isHelper"/>
+		<KeyWord name="isHomeTeam"/>
+		<KeyWord name="life"/>
+		<KeyWord name="lifeMax"/>
+		<KeyWord name="ln" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lose"/>
+		<KeyWord name="matchNo"/>
+		<KeyWord name="matchOver"/>
+		<KeyWord name="moveContact"/>
+		<KeyWord name="moveGuarded"/>
+		<KeyWord name="moveHit"/>
+		<KeyWord name="moveType"/>
+		<KeyWord name="moveReversed"/>
+		<KeyWord name="name"/>
+		<KeyWord name="numEnemy"/>
+		<KeyWord name="numExplod" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="numHelper" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="enemyNear" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="enemy"/>
+		<KeyWord name="numPartner"/>
+		<KeyWord name="numProj"/>
+		<KeyWord name="numProjID"/>
+		<KeyWord name="numTarget" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="p1Name"/>
+		<KeyWord name="p2BodyDist"/>
+		<KeyWord name="p2Dist"/>
+		<KeyWord name="p2Life"/>
+		<KeyWord name="p2MoveType"/>
+		<KeyWord name="p2Name"/>
+		<KeyWord name="p2StateNo"/>
+		<KeyWord name="stateNo"/>
+		<KeyWord name="p2StateType"/>
+		<KeyWord name="p3Name"/>
+		<KeyWord name="p4Name"/>
+		<KeyWord name="palNo"/>
+		<KeyWord name="parentDist"/>
+		<KeyWord name="pi"/>
+		<KeyWord name="pos"/>
+		<KeyWord name="power"/>
+		<KeyWord name="powerMax"/>
+		<KeyWord name="playerIdExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="prevStateNo"/>
+		<KeyWord name="projCancelTime"/>
+		<KeyWord name="projContact"/>
+		<KeyWord name="projContactTime" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="projGuarded"/>
+		<KeyWord name="projGuardedTime" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="projHit"/>
+		<KeyWord name="projHitTime" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="random"/>
+		<KeyWord name="rootDist"/>
+		<KeyWord name="roundNo"/>
+		<KeyWord name="roundsExisted"/>
+		<KeyWord name="roundState"/>
+		<KeyWord name="screenPos"/>
+		<KeyWord name="selfAnimExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stateType"/>
+		<KeyWord name="stageVar" func="yes">
+			<Overload retVal="" descr="
+			-[param_name]: info.author, info.displayName, info.name;">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example): " descr="">
+			<Param name="info.author" />
+			</Overload>
+		</KeyWord>	
+		<KeyWord name="sysVar" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="sysFvar" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tan" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="teamMode"/>
+		<KeyWord name="ticksPerSecond"/>
+		<KeyWord name="timeMod"/>
+		<KeyWord name="uniqHitCount"/>
+		<KeyWord name="var" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="vel"/>
+		<KeyWord name="win"/>
+		<KeyWord name="helperIndex" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="p2"/>
+		<KeyWord name="playerIndex" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stateOwner"/>
+		<KeyWord name="aiLevelF"/>
+		<KeyWord name="airJumpCount"/>
+		<KeyWord name="alpha"/>
+		<KeyWord name="angle"/>
+		<KeyWord name="animFrame" func="yes">
+			<Overload retVal="" descr="	
+-[param_name]: angle, numclsn1, time, (etc...);
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns information about the player's 
+current animation frame as defined in the AIR file
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="angle" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="numclsn2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="animPlayerNo"/>
+		<KeyWord name="attack"/>
+		<KeyWord name="animLength"/>
+		<KeyWord name="atan2" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exp1" />
+			<Param name="exp2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bgmVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: length, loopstart, loopend, position(etc...);
+						-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Allows checking the length, loopstart, loopend, position, startposition,
+ volume, and filename of the currently playing BGM;
+						-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="loopend" />
+			</Overload>
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="volume" />
+			</Overload>
+		</KeyWord>	
+		<KeyWord name="clamp" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="value" />
+			<Param name="min" />
+			<Param name="max" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="clsnOverlap" func="yes">
+			<Overload retVal="" descr="
+-[box_type_1]: clsn1, clsn2, and size;
+-[playerID]: ID; 
+-[box_type_2]: clsn1, clsn2, and size;
+						-(click arrows for description)">
+			<Param name="box_type_1" />
+			<Param name="playerID" />
+			<Param name="box_type_2" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns true if the player's specified collision box type 
+is overlapping another player's collision boxes
+						-(click arrows for examples)">
+			<Param name="box_type_1" />
+			<Param name="playerID" />
+			<Param name="box_type_2" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="clsn1" />
+			<Param name="(p2, id)" />
+			<Param name="clsn2" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="clsn2" />
+			<Param name="(enemyNear(0), id)" />
+			<Param name="clsn1" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="comboCount"/>
+		<KeyWord name="consecutiveWins"/>
+		<KeyWord name="deg" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="defence"/>
+		<KeyWord name="displayName"/>
+		<KeyWord name="dizzy"/>
+		<KeyWord name="dizzyPoints"/>
+		<KeyWord name="dizzyPointsMax"/>
+		<KeyWord name="drawPalNo"/>
+		<KeyWord name="envShakeVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: time, freq, ampl;
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Allows checking the (remaining) time, frequency 
+and amplitude of the current EnvShake
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="freq" />
+			</Overload>
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="time" />
+			</Overload>
+		</KeyWord>	
+		<KeyWord name="explodVar" func="yes">
+			<Overload retVal="" descr=" 
+-[id]: Expression;
+-[index]: Expression;
+-[param]: accel x, vel x, id, facing (etc...);
+				-(click arrows for description)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />				
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns the specified explod parameter. 
+Use -1 for ID to iterate over all explods.
+				-(click arrows for examples)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="
+-(all params):
+-accel x, accel y, anim, animelem, angle, angle x, angle y, 
+bindtime, facing, ID, layerno, pausemovetime, pos x, pos y, 
+removetime, scale x, scale y, sprpriority, vel x, vel y.">
+			<Param name="1300" />
+			<Param name="2" />
+			<Param name="accel x" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="5900" />
+			<Param name="0" />
+			<Param name="pausemovetime" />
+			</Overload>
+			<Overload retVal="(Example 3): " descr="">
+			<Param name="4003" />
+			<Param name="5" />
+			<Param name="anim" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fightTime"/>
+		<KeyWord name="firstAttack"/>
+		<KeyWord name="float" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="gameMode"/>
+		<KeyWord name="gameOption" func="yes">
+			<Overload retVal="" descr="
+			-[param_name]: sound.bgmvolume, sound.mastervolume, sound.maxvolume, (etc...);">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="
+-(all params):
+-length, loopstart. loopend, position, startposition, volume, filename">
+			<Param name="sound.mastervolume" />
+			</Overload>
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="sound.bgmvolume" />
+			</Overload>
+		</KeyWord>	
+		<KeyWord name="groundAngle"/>
+		<KeyWord name="groundLevel"/>
+		<KeyWord name="guardBreak"/>
+		<KeyWord name="guardCount"/>
+		<KeyWord name="guardPoints"/>
+		<KeyWord name="guardPointsMax"/>
+		<KeyWord name="helperID"/>
+		<KeyWord name="helperIndexExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="helperIndexExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="helperName"/>
+		<KeyWord name="hitDefVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: guardflag, guarddamage, (etc..);	
+				-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns information about the player's currently
+active HitDef or ReversalDef
+				-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="
+-(all params):
+-guarddamage, guardflag, hitdamage, hitflag.
+
+!-hitDefVar(guardflag) = MAF">
+			<Param name="guardflag" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="
+!-hitDefVar(guarddamage) >= 80">
+			<Param name="guarddamage" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="hitOverridden"/>
+		<KeyWord name="ikemenVersion"/>
+		<KeyWord name="inCustomAnim"/>
+		<KeyWord name="inCustomState"/>
+		<KeyWord name="index"/>
+		<KeyWord name="inDialogue"/>
+		<KeyWord name="inputTime" func="yes">
+			<Overload retVal="" descr="
+-[button]:  F, D, U, a, d, w, L, R, (etc...);	
+				-(click arrows for description)">
+			<Param name="button" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns number of frames since a given button was pressed or released;
+				-(click arrows for examples)">
+			<Param name="F" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="a" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="d" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="introState"/>
+		<KeyWord name="isAsserted" func="yes">
+			<Overload retVal="" descr="
+-[flag]: noBG, unguardable, invisible(etc...);	
+				-(click arrows for description)">
+			<Param name="flag" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns 1 if the character has specified AssertSpecial 
+state controller flag asserted.	
+				-(click arrows for examples)">
+			<Param name="flag" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="nobardisplay" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="unguardable" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isHost"/>
+		<KeyWord name="jugglePoints"/>
+		<KeyWord name="lastPlayerID"/>
+		<KeyWord name="layerNo"/>
+		<KeyWord name="lerp" func="yes">
+			<Overload retVal="" descr="
+	-[a]: Expression;
+	-[b]: Expression;
+	-[amount]: Expression (Avaiable range 0-1);">
+			<Param name="a" />
+			<Param name="b" />
+			<Param name="amount" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="0" />
+			<Param name="100" />
+			<Param name="0.5" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="localCoord"/>
+		<KeyWord name="max" func="yes">
+			<Overload retVal="" descr="
+	-[exp1]: Expression;
+	-[exp2]: Expression;">
+			<Param name="exp1" />
+			<Param name="exp2" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="39" />
+			<Param name="100" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="memberNo"/>
+		<KeyWord name="min" func="yes">
+			<Overload retVal="" descr="
+	-[exp1]: Expression;
+	-[exp2]: Expression;">
+			<Param name="exp1" />
+			<Param name="exp2" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="85" />
+			<Param name="45" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="moveCountered"/>
+		<KeyWord name="moveHitVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: cornerpush, frame, id, overridden (etc...);
+						-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>					
+			<Overload retVal="" descr="
+!-Similarly to GetHitVar, this trigger allows retrieving 
+information about the last hit the player inflicted;
+						-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example 1):" descr="
+-(all params):
+-cornerpush, frame, id, overridden playerno, sparkx, sparky.">
+			<Param name="overridden" />
+			</Overload>			
+			<Overload retVal="(Example 2):" descr="">
+			<Param name="frame" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="mugenVersion"/>
+		<KeyWord name="numPlayer"/>
+		<KeyWord name="numText" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="offset"/>
+		<KeyWord name="p5Name"/>
+		<KeyWord name="p6Name"/>
+		<KeyWord name="p7Name"/>
+		<KeyWord name="p8Name"/>
+		<KeyWord name="palFxVar" func="yes">
+			<Overload retVal="" descr="
+-[param]: add.r, mul.g, bg.time, time (etc...);
+				-(click arrows for description)">
+			<Param name="param" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns information about the player, background or global ('all') PalFX.;
+				-(click arrows for examples)">
+			<Param name="param" />
+			</Overload>			
+			<Overload retVal="(Example 1):" descr="
+-(params(1)):
+-add.r, add.g, add.b, all.time, all.add.r, all.add.g, 
+all.add.b, all.mul.r, all.mul.g, all.mul.b, all.color, 
+all.hue, all.invertall, all.invertblend, time">
+			<Param name="bg.time" />
+			</Overload>
+			<Overload retVal="(Example 2):" descr="
+-(params(2)):
+-bg.time, bg.add.r, bg.add.g, bg.add.b, bg.mul.r, bg.mul.g, 
+bg.mul.b, bg.color, bg.hue, bg.invertall, color, hue,
+invertall, invertblend, mul.r, mul.g, mul.b">
+			<Param name="all.invertall" />
+			</Overload>
+			<Overload retVal="(Example 3):" descr="">
+			<Param name="time" />
+			</Overload>			
+			<Overload retVal="(Example 4):" descr="">
+			<Param name="add.b" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pauseTime"/>
+		<KeyWord name="physics"/>
+		<KeyWord name="playerCount"/>
+		<KeyWord name="playerIndexExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="playerNo"/>
+		<KeyWord name="prevAnim"/>
+		<KeyWord name="prevMoveType"/>
+		<KeyWord name="prevStateType"/>
+		<KeyWord name="projVar" func="yes">
+			<Overload retVal="" descr=" 
+-[id]: Expression ;
+-[index]: Expression;
+-[param]: accel x, projmisstime, projid, projhits (etc...);
+						-(click arrows for description)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns the specified projectile parameter. 
+Use -1 for ID to iterate over all projectiles.
+						-(click arrows for examples)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />
+			</Overload>
+			<Overload retVal="(Example 1):" descr="
+-(params A-P):
+-accel x, accel y, anim, animelem, angle, highbound,
+layerno, lowbound, pausemovetime, pos x, pos y, projcancelanim,
+projedgebound, projhitanim, projhits, projID, projmisstime,
+projpriority, projremove, projremovetime, projremanim, projstagebound.
+							-(click arrows for all params)">
+			<Param name="1005" />
+			<Param name="0" />
+			<Param name="projhits" />
+			</Overload>			
+			<Overload retVal="(Example 2):" descr="
+-(params R-Z):
+-remvelocity x, remvelocity y, scale x, scale y, shadow r,
+shadow g, shadow b, sprpriority, teamside, vel x, vel y, velmul x, velmul y.
+">
+			<Param name="9555" />
+			<Param name="1" />
+			<Param name="projstagebound" />
+			</Overload>
+			<Overload retVal="(Example 3):" descr="">
+			<Param name="3005" />
+			<Param name="3" />
+			<Param name="highbound" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rad" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="randomRange" func="yes">
+			<Overload retVal="" descr="
+-[lower]: Lower range (inclusive);
+-[upper]: Upper range (inclusive);
+				-(click arrows for description)">
+			<Param name="lower" />
+			<Param name="upper" />
+			</Overload>					
+			<Overload retVal="" descr="
+!-Generates pseudo-random numbers uniformly 
+distributed between given range;
+				-(click arrows for examples)">
+			<Param name="lower" />
+			<Param name="upper" />
+			</Overload>		
+			<Overload retVal="(Example):" descr="">
+			<Param name="50" />
+			<Param name="100" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="ratioLevel"/>
+		<KeyWord name="receivedDamage"/>
+		<KeyWord name="receivedHits"/>
+		<KeyWord name="redLife"/>
+		<KeyWord name="reversalDefAttr"/>
+		<KeyWord name="round" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="persistent" func="yes">
+			<Overload retVal="" descr="
+-[exprn]: times, 1 = invalid, use 0 instead.
+					-(click arrows for description)">
+			<Param name="exprn" />
+			</Overload>
+			<Overload retVal="" descr="
+!-Toggles the persistency of a trigger.
+					-(click arrows for examples)">
+			<Param name="exprn" />
+			</Overload>			
+			<Overload retVal="(Example 1):" descr="">
+			<Param name="0" />
+			</Overload>			
+			<Overload retVal="(Example 2):" descr="">
+			<Param name="4" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roundType"/>
+		<KeyWord name="runOrder"/>
+		<KeyWord name="scale"/>
+		<KeyWord name="score"/>
+		<KeyWord name="scoreTotal"/>
+		<KeyWord name="selfCommand"/>
+		<KeyWord name="selfStatenoExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sign" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sprPriority"/>
+		<KeyWord name="stageBackEdgeDist"/>
+		<KeyWord name="stageConst" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="stageFrontEdgeDist"/>
+		<KeyWord name="StateDef"/>
+		<KeyWord name="ignoreHitPause"/>
+		<KeyWord name="stageTime"/>
+		<KeyWord name="standby"/>
+		<KeyWord name="teamSize"/>
+		<KeyWord name="timeElapsed"/>
+		<KeyWord name="timeRemaining"/>
+		<KeyWord name="timeTotal"/>
+		<KeyWord name="winHyper"/>
+		<KeyWord name="winSpecial"/>
+	</AutoComplete>
+</NotepadPlus>

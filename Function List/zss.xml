@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- ==========================================================================\
+|
+|   To learn how to make your own language parser, please check the following
+|   link:
+|       https://npp-user-manual.org/docs/function-list/
+|
+\=========================================================================== -->
+<NotepadPlus>
+	<functionList>
+		<!-- ====================================================== [ Axe ] -->
+			<parser 
+				displayName="ZSS"
+				id="ZSS"
+			>
+				<classRange
+					mainExpr    ="(?x-s)
+							[#]+<+<+[－ぁ-んァ-ン\wa-zA-Z0-9_ ()\.\+\-]+
+							
+							\s*
+						"
+					openSymbole ="\[－ぁ-んァ-ン\wa-zA-Z0-9_ ()\.\+\-]"
+					closeSymbole=">+>"
+				>
+					<className>
+						<nameExpr expr="[－ぁ-んァ-ン\wa-zA-Z0-9_ ()\.\+\-]+" />
+					</className>
+					<function mainExpr="(?x-s) [#]+->+.*">
+						<functionName>
+							<funcNameExpr expr="(?x-s) [#]+->+ \K.*" />
+						</functionName>
+					</function>
+				</classRange>
+				
+				<function mainExpr="(?x-s) [#]+->+.*">
+                    <functionName>
+                        <nameExpr expr="(?x-s) [#]+->+ \K.*"/>
+                    </functionName>
+                </function>
+			</parser>
+	</functionList>
+</NotepadPlus>
+
