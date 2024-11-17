@@ -1,0 +1,13 @@
+[Installation]
+1. Open UDL Dialog: "Language>User Defined Language>Define Your Language".
+
+2.Click "import", and select zss.xml,
+
+3.Restart Notepad++.
+
+.Done
+
+
+
+
+
