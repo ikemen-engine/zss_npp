@@ -1,0 +1,46 @@
+
+##<<Group or class 1
+#->Def 1
+[StateDef 65131; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+root, var(0):= root, var(0)+1; 
+saveFile{savedata: map(data); path:"kfm.gob";}
+root, var(0):= 0; 
+sprPriority{value: -1; layerno: 0;}
+tagOut{}
+
+
+#-> state asdf
+[StateDef 5411; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+
+#>>
+
+##<<Group or class 2
+#-> state test
+[StateDef -1; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+
+
+
+#->state 3
+[StateDef -1; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+
+
+
+#>>
+
+
+#-> test 5
+[StateDef -1; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+
+
+
+#-> test 8
+[StateDef -1; type: S; movetype: U; physics: S; anim: 0; ctrl: 0;]
+velset: 0,0;  
+ctrl: 0;
+poweradd: 0;
+juggle: 0;
+facep2: 0;
+hitdefpersist: 0;
+moveHitPersist: 0;
+hitcountpersist: 0;
+sprpriority: 0;
