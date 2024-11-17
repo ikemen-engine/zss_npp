@@ -30,7 +30,7 @@ It should look like this:
 ![example](example/should_look_like_this.png)
 
 ## Usage
-### #-> 		to declare a function
-
-### #<<  		to open a class
-### #>> 		to close a class
+* #### #-> 		to declare a function
+   #
+* #### #<<  		to open a class
+* #### #>> 		to close a class
