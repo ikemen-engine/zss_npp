@@ -35,6 +35,6 @@ There is a certain flexibility on how you can parse your functions and classes.
 Therefore, you have complete freedom to organize your states and group them using Functions and Classes.
 It is extremely easy to use and customize.
 
-[ZSS Function List Installation](Snippets/instructions.md)
+[ZSS Function List Installation](Function%20List/instructions.md)
 
 
