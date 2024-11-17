@@ -1,4 +1,4 @@
-## Instalation
+## Installation
 1. Open UDL Dialog: "Language>User Defined Language>Define Your Language".
 
 2. Click "import", and load the "zss.xml" file.
