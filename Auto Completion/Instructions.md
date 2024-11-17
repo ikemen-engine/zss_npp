@@ -13,9 +13,9 @@
 ![auto](images/auto.png)
 
 ## Usage
-1. press ctrl+shift+space to open function tips.(after you put "()" )
+1. Press ```ctrl+shift+space``` to open function tips.(after you put "()" ) or press ```ctrl+space```
 
-2. Press Alt+Up/Down to scrown between tips and examples;
+2. Press ```Alt+Up/Down``` to scrown between tips and examples;
 
 ![arrow](images/arrow.png)
 
