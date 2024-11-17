@@ -22,7 +22,7 @@ Each folder contains a tool and a set of instructions on how to install it and u
 ### ZSS Auto-Completion.
 * A set of auto-completion keywords and functions mainly aimed to cover triggers.
 
-[ZSS Auto-Completion Installation](Auto%20Completion/instructions.md)
+[ZSS Auto-Completion Installation](Auto%20Completion/Instructions.md)
 
 ### ZSS SCTRL Snippets.
 * A set of snippets to aimed mainly to cover State Controllers, with a few more inclusions.
