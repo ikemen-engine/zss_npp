@@ -24,7 +24,7 @@
 
 ![fun](images/function.png)
 
-2. You can test if it worked with the file included: "(example).zss".
+2. You can test if it worked with the file included: ```"(example).zss"```.
 
 It should look like this:
 
