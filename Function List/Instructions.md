@@ -33,4 +33,4 @@ It should look like this:
 ### #-> 		to declare a function
 
 ### #<<  		to open a class
-### #>> 		to close a class
+### #>> 		to close a class
