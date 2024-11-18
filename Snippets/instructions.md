@@ -4,7 +4,7 @@ if that's your case the try opening plugins folder, and copying the plugin there
 
 1. Open Plugins Admin: ```"Plugins>Plugin Admin"```.
 
-2. Search for "Snippets". Then install snippets plugin.
+2. Search for "Snippets". Then install Snippets plugin.
 
 3. Restart Notepad++.
 
@@ -22,7 +22,7 @@ if that's your case the try opening plugins folder, and copying the plugin there
 
 ## Importing the ZSS SCTRL Snippets
 
-1. After the plugin was successfully installed, open the snippets tab: ```"Plugins>Snippets>Snippets"```.
+1. After the plugin was successfully installed, open the Snippets tab: ```"Plugins>Snippets>Snippets"```.
 
 2. Right click the library tab (where it says "ANSI-characters / teamplates"). Then select ```"Import library"```, 
 then import ```"ZSS Sctrl.sqlite"```.
@@ -31,7 +31,7 @@ then import ```"ZSS Sctrl.sqlite"```.
 
 
 ### Quality Of Life Tips (optional)
-1. You can search for snippets on the tab.
+1. You can search for Snippets on the tab.
 
 ![img](images/search.png)
 
