@@ -13,7 +13,7 @@ This is a set of tools for writing ZSS(Zantei State Script) using Notepad++. Thi
 * ZSS Function List (useful for organizing, and navigating through your code).
 
 ## Installing
-Each folder contains a tool, and a set of instructions on, how to install it, and use it.
+Each folder contains a tool, and a set of instructions on how to install it, and use it.
 
 
 ### ZSS Syntax
