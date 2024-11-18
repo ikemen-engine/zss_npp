@@ -1,14 +1,14 @@
 # Auto Completion
 ## Installation
-1. Open Notepad++'s folder, and then locate "autoCompletion" folder.
+1. Open Notepad++'s folder, and then locate ```"autoCompletion"``` folder.
 
-2. Copy "zss.xml" to that folder.
+2. Copy ```"zss.xml"``` to that folder.
 
 3. Restart Notepad++.
 
 
 ### To Activate Autocompletion
-1. Go to "Settings>Preferences>Auto-Completion", Enable 'auto-completion' on each input.
+1. Go to ```"Settings>Preferences>Auto-Completion"```, Enable 'auto-completion' on each input.
 
 ![auto](images/auto.png)
 
