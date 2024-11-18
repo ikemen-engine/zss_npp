@@ -1,10 +1,9 @@
-# ZSS Function List
 ## Installation
-1. Open Notepad++'s folder, and then locate "functionList" folder.
+1. Open Notepad++'s folder, and then locate ```"functionList"``` folder.
 
 2. Copy zss.xml to that folder.
 
-3. Now, in that same folder, locate a file named "overrideMap.xml", then open it.
+3. Now, in that same folder, locate a file named ```"overrideMap.xml"```, then open it.
 
 4. Now find the line: 
 "```<!-- ==================== User Defined Languages ============================ -->```"
@@ -20,11 +19,11 @@
 
 ### Show Function List
 
-1. "View>Function List" or Press the "f" button on the toolbar.
+1. ```"View>Function List"``` or Press the "f" button on the toolbar.
 
 ![fun](images/function.png)
 
-2. You can test if it worked with the file included: ```"(example).zss"```.
+2. You can test if it worked fine, with the file included: ```"(example).zss"```.
 
 It should look like this:
 
