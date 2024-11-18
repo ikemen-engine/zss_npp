@@ -243,7 +243,7 @@ from the specified CLSN index.
 			<Param name="top" />
 			</Overload>
 		</KeyWord>
-		<KeyWord name="aILevel"/>
+		<KeyWord name="aiLevel"/>
 		<KeyWord name="alive"/>
 		<KeyWord name="anim"/>
 		<KeyWord name="animElem"/>
@@ -534,6 +534,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="pos"/>
 		<KeyWord name="power"/>
 		<KeyWord name="powerMax"/>
+		<KeyWord name="playerId"/>
 		<KeyWord name="playerIdExist" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="exprn" />
