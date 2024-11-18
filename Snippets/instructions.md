@@ -30,7 +30,7 @@ then import ```"ZSS Sctrl.sqlite"```.
 ![gg](images/import.png)
 
 
-### Quality Of Life Tips(optional)
+### Quality Of Life Tips (optional)
 1. You can search for snippets on the tab.
 
 ![img](images/search.png)
