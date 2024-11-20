@@ -1136,6 +1136,8 @@ distributed between given range;
 		<KeyWord name="timeElapsed"/>
 		<KeyWord name="timeRemaining"/>
 		<KeyWord name="timeTotal"/>
+		<KeyWord name="topBoundDist"/>
+		<KeyWord name="botBoundDist"/>
 		<KeyWord name="winHyper"/>
 		<KeyWord name="winSpecial"/>
 	</AutoComplete>
