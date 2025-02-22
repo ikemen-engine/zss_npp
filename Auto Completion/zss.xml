@@ -40,6 +40,22 @@ round.slow.time, round.start.waittime, time.framespercount.">
 			<Overload retVal="(Example):" descr="">
 			<Param name="info.localcoord.y" />
 			</Overload>
+		</KeyWord>		
+		<KeyWord name="fightScreenState" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: fightdisplay, kodisplay(etc...);
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!- Allows checking if the fight screen is displaying specific screens.
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="
+-(all params): fightdisplay , kodisplay , rounddisplay , windisplay;">
+			<Param name="rounddisplay" />
+			</Overload>			
 		</KeyWord>
 		<KeyWord name="info.author" />
 		<KeyWord name="info.localcoord.x" />
@@ -218,7 +234,7 @@ Else, it returns the value of the third argument
 			<Overload retVal="" descr=" 
 -[value_type]: clsn1, clsn2, and size;
 -[index]: Expression;
--[elem]: front, top, and bottom;
+-[elem]: front, back, top, and bottom;
 						-(click arrows for description)">
 			<Param name="value_type" />
 			<Param name="index" />
@@ -472,6 +488,8 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="isHelper"/>
 		<KeyWord name="isHomeTeam"/>
 		<KeyWord name="life"/>
+		<KeyWord name="decisiveRound">
+		</KeyWord>
 		<KeyWord name="lifeMax"/>
 		<KeyWord name="ln" func="yes">
 			<Overload retVal="" descr="">
@@ -580,7 +598,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 			<Overload retVal="(Example): " descr="">
 			<Param name="info.author" />
 			</Overload>
-		</KeyWord>	
+		</KeyWord>
 		<KeyWord name="sysVar" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="number" />
@@ -619,11 +637,12 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 			</Overload>
 		</KeyWord>
 		<KeyWord name="stateOwner"/>
+		<KeyWord name="stateOwner"/>
 		<KeyWord name="aiLevelF"/>
 		<KeyWord name="airJumpCount"/>
 		<KeyWord name="alpha"/>
 		<KeyWord name="angle"/>
-		<KeyWord name="animFrame" func="yes">
+		<KeyWord name="animElemVar" func="yes">
 			<Overload retVal="" descr="	
 -[param_name]: angle, numclsn1, time, (etc...);
 					-(click arrows for description)">
@@ -640,6 +659,45 @@ current animation frame as defined in the AIR file
 			</Overload>			
 			<Overload retVal="(Example 2): " descr="">
 			<Param name="numclsn2" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="systemVar" func="yes">
+			<Overload retVal="" descr="	
+-[param_name]: introtime, outrotime, pausetime, slowtime, superpausetime
+(etc...);
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="" descr="
+!- Allows checking some system variables that generally don't justify having their own dedicated triggers. 
+Not to be confused with 'sysvar';
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="superpausetime" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="pausetime" />
+			</Overload>
+		</KeyWord>
+				<KeyWord name="debug" func="yes">
+			<Overload retVal="" descr="	
+-[param_name]: accel, clsndraw, debugdraw, statusdraw, 
+wireframedraw, roundrestarted;
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns debug related information
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="accel" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="clsndraw" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="animPlayerNo"/>
@@ -668,6 +726,59 @@ current animation frame as defined in the AIR file
 			</Overload>
 			<Overload retVal="(Example 2): " descr="">
 			<Param name="volume" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="soundVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: group, number, freqmul, isplaying (etc...);
+						-(click arrows for description)">
+			<Param name="channelNo" />
+			<Param name="param" />
+			</Overload>
+			
+			<Overload retVal="" descr="
+!-Allows checking the group, number, freqmul, isplaying, length, loopcount(etc...) 
+of the currently playing Sound;
+						-(click arrows for examples);">
+			<Param name="channelNo" />
+			<Param name="param" />
+			</Overload>	
+			
+			<Overload retVal="(Example 1): " descr="
+-(all params):
+-group, number, freqmul, isplaying, length, loopcount, loopstart, 
+loopend, pan, position, priority, startposition, volumescale;">
+			<Param name="0" />
+			<Param name="isplaying" />
+			</Overload>
+			
+
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="0" />
+			<Param name="isplaying" />
+			</Overload>
+		</KeyWord>	
+		<KeyWord name="hitByAttr" func="yes">
+			<Overload retVal="" descr="
+-[flag1]: The state type flag;
+-[flag2]: The attack type flag;
+						-(click arrows for description)">
+			<Param name="flag1" />
+			<Param name="flag2" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Checks if the player can be hit by an attack with the specified attribute;
+						-(click arrows for examples)">
+			<Param name="flag1" />
+			<Param name="flag2" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="S" />
+			<Param name="NT" />
+			</Overload>
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="A" />
+			<Param name="SP" />
 			</Overload>
 		</KeyWord>	
 		<KeyWord name="clamp" func="yes">
@@ -830,7 +941,9 @@ active HitDef or ReversalDef
 			</Overload>			
 			<Overload retVal="(Example 1): " descr="
 -(all params):
--guarddamage, guardflag, hitdamage, hitflag.
+-guard.pausetime, guard.shaketime, guarddamage, guardflag, 
+hitdamage, hitflag, id, p1stateno, p2stateno, pausetime, 
+priority, shaketime, sparkx, sparky;
 
 !-hitDefVar(guardflag) = MAF">
 			<Param name="guardflag" />
@@ -1002,6 +1115,21 @@ invertall, invertblend, mul.r, mul.g, mul.b">
 			<Overload retVal="" descr="">
 			<Param name="number" />
 			</Overload>
+		</KeyWord>		
+		<KeyWord name="playerNoExist" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="number" />
+			</Overload>
+		</KeyWord>		
+		<KeyWord name="motifState" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: continuescreen, victoryscreen, winscreen;">
+			<Param name="param" />
+			</Overload>
+			<Overload retVal="" descr="
+!-Allows retrieval of whether the specified post-round sequence is active;">
+			<Param name="param" />
+			</Overload>	
 		</KeyWord>
 		<KeyWord name="playerNo"/>
 		<KeyWord name="prevAnim"/>
@@ -1129,14 +1257,17 @@ distributed between given range;
 		</KeyWord>
 		<KeyWord name="stageFrontEdgeDist"/>
 		<KeyWord name="StateDef"/>
+		<KeyWord name="roundTime"/>
+		<KeyWord name="outroState"/>
 		<KeyWord name="ignoreHitPause"/>
 		<KeyWord name="stageTime"/>
-		<KeyWord name="standby"/>
+		<KeyWord name="standBy"/>
 		<KeyWord name="teamSize"/>
 		<KeyWord name="timeElapsed"/>
 		<KeyWord name="timeRemaining"/>
 		<KeyWord name="timeTotal"/>
 		<KeyWord name="topBoundDist"/>
+		<KeyWord name="topBoundBodyDist"/>
 		<KeyWord name="botBoundDist"/>
 		<KeyWord name="winHyper"/>
 		<KeyWord name="winSpecial"/>
