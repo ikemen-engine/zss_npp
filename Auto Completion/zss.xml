@@ -2,6 +2,7 @@
 <NotepadPlus>
 	<AutoComplete>
 		<KeyWord name="teamLeader"/>
+		<KeyWord name="isClsnProxy"/>
 		<KeyWord name="SCA"/>
 		<KeyWord name="NA, NP, NT,"/>		
 		<KeyWord name="SA, SP, ST,"/>		
@@ -15,7 +16,8 @@
 		</KeyWord>		
 		<KeyWord name="helper" func="yes">
 			<Overload retVal="{redirect}" descr="">
-			<Param name="number" />
+			<Param name="id" />
+			<Param name="index" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="fightScreenVar" func="yes">
@@ -462,7 +464,6 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="xvel"/>
 		<KeyWord name="yvel"/>
 		<KeyWord name="yaccel"/>
-		<KeyWord name="chainid"/>
 		<KeyWord name="guarded"/>
 		<KeyWord name="isbound"/>
 		<KeyWord name="fall"/>
@@ -626,22 +627,33 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="vel"/>
 		<KeyWord name="win"/>
 		<KeyWord name="helperIndex" func="yes">
-			<Overload retVal="" descr="">
+			<Overload retVal="{redirect}" descr="">
 			<Param name="number" />
 			</Overload>
 		</KeyWord>
 		<KeyWord name="p2"/>
 		<KeyWord name="playerIndex" func="yes">
-			<Overload retVal="" descr="">
+			<Overload retVal="{redirect}" descr="">
 			<Param name="number" />
 			</Overload>
 		</KeyWord>
-		<KeyWord name="stateOwner"/>
+		<KeyWord name="target" func="yes">
+			<Overload retVal="{redirect}" descr="">
+			<Param name="id" />
+			<Param name="index" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="stateOwner"/>
 		<KeyWord name="aiLevelF"/>
 		<KeyWord name="airJumpCount"/>
 		<KeyWord name="alpha"/>
 		<KeyWord name="angle"/>
+		<KeyWord name="xAngle"/>
+		<KeyWord name="yAngle"/>
+		<KeyWord name="xAngle"/>
+		<KeyWord name="drawPal"/>
+		<KeyWord name="debugMode"/>
+		<KeyWord name="roundsWon"/>
 		<KeyWord name="animElemVar" func="yes">
 			<Overload retVal="" descr="	
 -[param_name]: angle, numclsn1, time, (etc...);
@@ -661,7 +673,30 @@ current animation frame as defined in the AIR file
 			<Param name="numclsn2" />
 			</Overload>
 		</KeyWord>		
-		<KeyWord name="systemVar" func="yes">
+				<KeyWord name="stageBgVar" func="yes">
+			<Overload retVal="" descr="	
+-[param_name]: ID, index, param, (etc...);
+					-(click arrows for description)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns information about the player's 
+current animation frame as defined in the AIR file
+					-(click arrows for examples)">
+			<Param name="id" />
+			<Param name="index" />
+			<Param name="param" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="StageBGVar(4, 1, actionno) = 40">
+			<Param name="4" />
+			<Param name="1" />
+			<Param name="actionno" />
+			</Overload>			
+		</KeyWord>	
+		
+		<KeyWord name="gameVar" func="yes">
 			<Overload retVal="" descr="	
 -[param_name]: introtime, outrotime, pausetime, slowtime, superpausetime
 (etc...);
@@ -681,7 +716,7 @@ Not to be confused with 'sysvar';
 			<Param name="pausetime" />
 			</Overload>
 		</KeyWord>
-				<KeyWord name="debug" func="yes">
+			<KeyWord name="debug" func="yes">
 			<Overload retVal="" descr="	
 -[param_name]: accel, clsndraw, debugdraw, statusdraw, 
 wireframedraw, roundrestarted;
@@ -869,7 +904,7 @@ Use -1 for ID to iterate over all explods.
 			</Overload>
 			<Overload retVal="(Example 1): " descr="
 -(all params):
--accel x, accel y, anim, animelem, angle, angle x, angle y, 
+-time, accel x, accel y, anim, animelem, angle, angle x, angle y, 
 bindtime, facing, ID, layerno, pausemovetime, pos x, pos y, 
 removetime, scale x, scale y, sprpriority, vel x, vel y.">
 			<Param name="1300" />
@@ -916,11 +951,6 @@ removetime, scale x, scale y, sprpriority, vel x, vel y.">
 		<KeyWord name="guardPoints"/>
 		<KeyWord name="guardPointsMax"/>
 		<KeyWord name="helperID"/>
-		<KeyWord name="helperIndexExist" func="yes">
-			<Overload retVal="" descr="">
-			<Param name="number" />
-			</Overload>
-		</KeyWord>
 		<KeyWord name="helperIndexExist" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="number" />
