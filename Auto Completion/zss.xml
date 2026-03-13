@@ -42,7 +42,24 @@ round.slow.time, round.start.waittime, time.framespercount.">
 			<Overload retVal="(Example):" descr="">
 			<Param name="info.localcoord.y" />
 			</Overload>
-		</KeyWord>		
+		</KeyWord>
+
+		<KeyWord name="helperVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: id, normal, player, helpertype (etc...);
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-.
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr=" helperVar(helpertype) = 1, 2, 3">
+			<Param name="helpertype"  />
+			</Overload>
+		</KeyWord>	
+		
 		<KeyWord name="fightScreenState" func="yes">
 			<Overload retVal="" descr="
 -[param_name]: fightdisplay, kodisplay(etc...);
@@ -299,7 +316,19 @@ of a specified element of the current animation action.
 			<Overload retVal="(Example 2):" descr="">
 			<Param name="const(attackframe)" />
 			</Overload>
-		</KeyWord>		
+		</KeyWord>
+		<KeyWord name="spriteVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: Group, Height, Image, Width, XOffset, YOffset.
+						-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns information about the player's current sprite.
+						-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="animExist" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="exprn" />
@@ -317,6 +346,7 @@ of a specified element of the current animation action.
 			</Overload>
 		</KeyWord>
 		<KeyWord name="authorName"/>
+		<KeyWord name="cameraPos"/>
 		<KeyWord name="backEdgeBodyDist"/>
 		<KeyWord name="backEdgeDist"/>
 		<KeyWord name="canRecover"/>
@@ -512,6 +542,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="moveReversed"/>
 		<KeyWord name="name"/>
 		<KeyWord name="numEnemy"/>
+		<KeyWord name="numStageBG"/>
 		<KeyWord name="numExplod" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="exprn" />
