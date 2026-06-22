@@ -36,7 +36,7 @@ fight screen (commonly referred to as 'lifebars').
 -(all params):
 -info.author, info.localcoord.x, info.localcoord.y, info.name, round.ctrl.time, 
 round.over.hittime, round.over.time, round.over.waittime, round.over.wintime, 
-round.slow.time, round.start.waittime, time.framespercount.">
+round.slow.time, round.start.waittime, time.framespercount, hidebars.">
 			<Param name="info.author" />
 			</Overload>			
 			<Overload retVal="(Example):" descr="">
@@ -51,14 +51,14 @@ round.slow.time, round.start.waittime, time.framespercount.">
 			<Param name="param_name" />
 			</Overload>				
 			<Overload retVal="" descr="
-!-.
+!-Returns a helper's unique properties.
 					-(click arrows for examples)">
 			<Param name="param_name" />
 			</Overload>			
 			<Overload retVal="(Example):" descr=" helperVar(helpertype) = 1, 2, 3">
 			<Param name="helpertype"  />
 			</Overload>
-		</KeyWord>	
+		</KeyWord>
 		
 		<KeyWord name="fightScreenState" func="yes">
 			<Overload retVal="" descr="
@@ -76,6 +76,59 @@ round.slow.time, round.start.waittime, time.framespercount.">
 			<Param name="rounddisplay" />
 			</Overload>			
 		</KeyWord>
+		
+		<KeyWord name="analog" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: LeftX, LeftY, RightX, RightY, LeftTrigger, RightTrigger;
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!- Returns the value of the player's respective analog axis. 
+Values are normalized from [-1,1] with the exception of analog triggers (RightTrigger and LeftTrigger)
+ which are normalized to [0.0,1.0].
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="RightTrigger" />
+			</Overload>			
+		</KeyWord>
+		
+		<KeyWord name="motifVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: motif.<param>;
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!- Allows checking the various screenpack options as defined in system.def (TBD)
+ Keep in mind that until string support is added to the engine, 
+ only numeric values are useful to return.
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="info.mugenversion" />
+			</Overload>			
+		</KeyWord>
+
+		<KeyWord name="zoomVar" func="yes">
+			<Overload retVal="" descr="
+-[param_name]: scale, pos.x, pos.y, lag, time;
+					-(click arrows for description)">
+			<Param name="param_name" />
+			</Overload>				
+			<Overload retVal="" descr="
+!- Allows checking the scale, pos x, pos y, lag, and remaining time of the currently Zoom sctrl.
+					-(click arrows for examples)">
+			<Param name="param_name" />
+			</Overload>			
+			<Overload retVal="(Example):" descr="">
+			<Param name="scale" />
+			</Overload>			
+		</KeyWord>
+		
 		<KeyWord name="info.author" />
 		<KeyWord name="info.localcoord.x" />
 		<KeyWord name="info.localcoord.y" />
@@ -463,7 +516,7 @@ space to the player's coordinate space.
 fall.damage, fall.envshake.ampl, fall.envshake.freq,
 fall.envshake.phase, fall.envshake.time, fall.kill, 
 fall.recover, fall.recovertime, fall.xvel, fall.yvel, 
-fallcount, frame.
+fallcount, frame, teamside.
 				-(click arrows for all params)">
 			<Param name="id" />
 			</Overload>						
@@ -768,6 +821,7 @@ wireframedraw, roundrestarted;
 		</KeyWord>
 		<KeyWord name="animPlayerNo"/>
 		<KeyWord name="attack"/>
+		<KeyWord name="attackMul"/>
 		<KeyWord name="animLength"/>
 		<KeyWord name="atan2" func="yes">
 			<Overload retVal="" descr="">
@@ -883,6 +937,36 @@ is overlapping another player's collision boxes
 			<Param name="clsn1" />
 			</Overload>
 		</KeyWord>
+		
+			<KeyWord name="projClsnOverlap" func="yes">
+			<Overload retVal="" descr="
+-[index]: clsn1, clsn2, and size;
+-[playerID]: ID; 
+-[box_type]: clsn1, clsn2, and size;
+						-(click arrows for description)">
+			<Param name="index" />
+			<Param name="playerID" />
+			<Param name="box_type" />
+			</Overload>			
+			<Overload retVal="" descr="
+!-Returns true if the projectile's collision box (either clsn1 or clsn2) overlaps with another player's collision boxes.
+						-(click arrows for examples)">
+			<Param name="index" />
+			<Param name="playerID" />
+			<Param name="box_type" />
+			</Overload>
+			<Overload retVal="(Example 1): " descr="">
+			<Param name="-1" />
+			<Param name="(p2, id)" />
+			<Param name="clsn2" />
+			</Overload>			
+			<Overload retVal="(Example 2): " descr="">
+			<Param name="0" />
+			<Param name="(enemyNear(0), id)" />
+			<Param name="clsn1" />
+			</Overload>
+		</KeyWord>
+	
 		<KeyWord name="comboCount"/>
 		<KeyWord name="consecutiveWins"/>
 		<KeyWord name="deg" func="yes">
@@ -891,6 +975,7 @@ is overlapping another player's collision boxes
 			</Overload>
 		</KeyWord>
 		<KeyWord name="defence"/>
+		<KeyWord name="defenceMul"/>
 		<KeyWord name="displayName"/>
 		<KeyWord name="dizzy"/>
 		<KeyWord name="dizzyPoints"/>
@@ -981,7 +1066,6 @@ removetime, scale x, scale y, sprpriority, vel x, vel y.">
 		<KeyWord name="guardCount"/>
 		<KeyWord name="guardPoints"/>
 		<KeyWord name="guardPointsMax"/>
-		<KeyWord name="helperID"/>
 		<KeyWord name="helperIndexExist" func="yes">
 			<Overload retVal="" descr="">
 			<Param name="number" />
