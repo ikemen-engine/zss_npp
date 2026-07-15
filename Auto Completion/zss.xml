@@ -1099,7 +1099,26 @@ priority, shaketime, sparkx, sparky;
 			</Overload>
 		</KeyWord>
 		<KeyWord name="hitOverridden"/>
-		<KeyWord name="ikemenVersion"/>
+		<KeyWord name="ikemenVersion" func="yes">
+			<Overload retVal="" descr="
+-[versionparam]:  major, minor, patch;	
+				-(click arrows for description)">
+			<Param name="versionparam" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns one component of the character's Ikemen version as an integer.;
+				-(click arrows for examples)">
+			<Param name="versionparam" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="
+!-[IkemenVersion = 1.0, in Def file.] ikemenversion(major) = 1;">
+			<Param name="major" />
+			</Overload>	
+			<Overload retVal="(Example 2): " descr="
+!-[IkemenVersion = 1.2, in Def file.] ikemenversion(minor) = 2;">
+			<Param name="minor" />
+			</Overload>						
+		</KeyWord>
 		<KeyWord name="inCustomAnim"/>
 		<KeyWord name="inCustomState"/>
 		<KeyWord name="index"/>
