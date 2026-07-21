@@ -277,6 +277,11 @@ Else, it returns the value of the third argument
 			<Param name="exprn" />
 			</Overload>
 		</KeyWord>
+		<KeyWord name="acos" func="yes">
+			<Overload retVal="" descr="">
+			<Param name="exprn" />
+			</Overload>
+		</KeyWord>
 		<KeyWord name="root" />
 		<KeyWord name="floor" func="yes">
 			<Overload retVal="" descr="">
@@ -594,6 +599,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="moveType"/>
 		<KeyWord name="moveReversed"/>
 		<KeyWord name="name"/>
+		<KeyWord name="shader"/>
 		<KeyWord name="numEnemy"/>
 		<KeyWord name="numStageBG"/>
 		<KeyWord name="numExplod" func="yes">
@@ -710,6 +716,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		</KeyWord>
 		<KeyWord name="vel"/>
 		<KeyWord name="win"/>
+		<KeyWord name="winClutch"/>
 		<KeyWord name="helperIndex" func="yes">
 			<Overload retVal="{redirect}" descr="">
 			<Param name="number" />
@@ -734,7 +741,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="angle"/>
 		<KeyWord name="xAngle"/>
 		<KeyWord name="yAngle"/>
-		<KeyWord name="xAngle"/>
+		<KeyWord name="xShear"/>
 		<KeyWord name="drawPal"/>
 		<KeyWord name="debugMode"/>
 		<KeyWord name="roundsWon"/>
@@ -820,6 +827,7 @@ wireframedraw, roundrestarted;
 			</Overload>
 		</KeyWord>
 		<KeyWord name="animPlayerNo"/>
+		<KeyWord name="spritePlayerNo"/>
 		<KeyWord name="attack"/>
 		<KeyWord name="attackMul"/>
 		<KeyWord name="animLength"/>
@@ -1119,6 +1127,27 @@ priority, shaketime, sparkx, sparky;
 			<Param name="minor" />
 			</Overload>						
 		</KeyWord>
+	
+			<KeyWord name="mugenVersion" func="yes">
+			<Overload retVal="" descr="
+-[versionparam]:  major, minor, patch;	
+				-(click arrows for description)">
+			<Param name="versionparam" />
+			</Overload>				
+			<Overload retVal="" descr="
+!-Returns one component of the character's Mugen version as an integer.;
+				-(click arrows for examples)">
+			<Param name="versionparam" />
+			</Overload>			
+			<Overload retVal="(Example 1): " descr="
+!-[MugenVersion = 1.0, in Def file.] mugenversion(major) = 1;">
+			<Param name="major" />
+			</Overload>	
+			<Overload retVal="(Example 2): " descr="
+!-[MugenVersion = 1.2, in Def file.] mugenversion(minor) = 2;">
+			<Param name="minor" />
+			</Overload>						
+		</KeyWord>
 		<KeyWord name="inCustomAnim"/>
 		<KeyWord name="inCustomState"/>
 		<KeyWord name="index"/>
@@ -1228,7 +1257,6 @@ information about the last hit the player inflicted;
 			<Param name="frame" />
 			</Overload>
 		</KeyWord>
-		<KeyWord name="mugenVersion"/>
 		<KeyWord name="numPlayer"/>
 		<KeyWord name="numText" func="yes">
 			<Overload retVal="" descr="">
