@@ -19,7 +19,7 @@ if that's your case the try opening plugins folder, and copying the plugin there
 
 ![gg](images/plugin_import.png)
 
-4. Restart Notepad++.
+3. Restart Notepad++.
 
 ## Importing the ZSS SCTRL Snippets
 
