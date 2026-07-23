@@ -18,6 +18,7 @@ if that's your case the try opening plugins folder, and copying the plugin there
 2. Unzip ```"NppSnippets 1.7"```. Then insert the ```"NppSnippets"``` folder, inside Notepad++'s ```Plugins``` folder.
 
 3. You can also use(alternatively) notepad++'s "Import Plugin" Feature. ```"Settings>Import>Import Plugin"```
+
 ![gg](images/plugin_import.png)
 
 4. Restart Notepad++.
