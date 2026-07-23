@@ -13,18 +13,13 @@ if that's your case the try opening plugins folder, and copying the plugin there
 
 #### If the Plugin Admin doesn't work...
 
-1. ```"Plugins>Open Plugins Folder"```
+1. Unzip ```"NppSnippets 1.7"```.
 
-2. Unzip ```"NppSnippets 1.7"```. Then insert the ```"NppSnippets"``` folder, inside Notepad++'s ```Plugins``` folder.
-
-3. You can also use(alternatively) notepad++'s "Import Plugin" Feature. ```"Settings>Import>Import Plugin"```
+2. Then in inside Notepad++, go to ```"Settings>Import>Import Plugin"``` and import your unzipped file.
 
 ![gg](images/plugin_import.png)
 
 4. Restart Notepad++.
-
-
-
 
 ## Importing the ZSS SCTRL Snippets
 
