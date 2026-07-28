@@ -48,6 +48,6 @@ Current Features:
 but not will not be possible to cover every-single edge-case scenario, due to both NPP's and the Plug-in's limitations.
 currently we have, ";" check for stcrls|localvars, invalid redirections, invalid map names... More will come with time. Suggestions are welcome, if possible they'll be implemented.
 
-[ZSS Lexer Installation](ZSS%20Lexer/Instructions.md)
+[ZSS Lexer Installation](ZSS%20Lexer/instructions.md)
 
 ![gg](ZSS%20Lexer/images/lexerexample.png)
