@@ -44,10 +44,10 @@ It is extremely easy to use, and customize.
 ### ZSS Lexer (New)
 * Using Ekopocalypse's "enhanceanylexer plug-in" we can expand on notepad++'s UDL limitations, And create custom lexers for some ZSS triggers, and functions
 Current Features:
-- Enhance maps, consts, localvars , some triggers such as hitdefattr etc...
-- Fake-linting by coloring some "Syntax Errors". Notice: Only some sytax errors are currently implemented. It might me expanded with time in the future. Suggestions are welcome
-but not will not be possible to cover every-single edge-case scenario, due to both NPP's and the Plug-in's limitations.
-currently we have, ";" check for stcrls|localvars, invalid redirections, invalid map names... More will come with time. Suggestions are welcome, if possible they'll be implemented.
+- Enhance maps, consts, localvars , some triggers such as hitdefattr etc... (Will be expanded in the future)
+- Fake-linting, by coloring some "Syntax Errors". Notice: Only some sytax errors are currently implemented, It might me expanded with time in the future. Suggestions are welcome,
+but it won't be possible to cover every-single-edge-case scenario, due to both NPP's and the Plug-in's limitations.
+currently we have, ";" check for stcrls/localvars, invalid redirections, invalid map names... More will come with time. Suggestions are welcome, if possible they'll be implemented.
 
 [ZSS Lexer Installation](ZSS%20Lexer/instructions.md)
 
