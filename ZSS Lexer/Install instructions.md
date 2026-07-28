@@ -4,7 +4,7 @@
 
 1. Unzip ```EnhanceAnyLexer_x64.zip```. (You can also visit the offical "Ekopocalypse's" github page, and download the latest version: [EnhanceAnyLexer GithubPage](https://github.com/Ekopalypse/EnhanceAnyLexer/))
 
-2. Then in inside Notepad++, go to ```"Settings>Import>Import Plugin"``` and import your unzipped file.
+2. Then inside Notepad++, go to ```"Settings>Import>Import Plugin"``` and import your unzipped file.
 
 ![gg](images/plugin_import.png)
 
