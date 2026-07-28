@@ -11,6 +11,7 @@ This is a set of tools for writing ZSS(Zantei State Script) using Notepad++. Thi
 * ZSS Auto-Completion.
 * ZSS SCTRL Snippets.
 * ZSS Function List (useful for organizing, and navigating through your code).
+* ZSS Lexer (Expands on NPP's UDL limitations)
 
 ## Installing
 Each folder contains a tool, and a set of instructions on how to install it, and use it.
@@ -40,7 +41,7 @@ It is extremely easy to use, and customize.
 
 [ZSS Function List Installation](Function%20List/Instructions.md)
 
-### ZSS Lexer(New)
+### ZSS Lexer (New)
 * Using Ekopocalypse's "enhanceanylexer plug-in" we can expand on notepad++'s UDL limitations, And create custom lexers for some ZSS triggers, and functions
 Current Features:
 - Enhance maps, consts, localvars , some triggers such as hitdefattr etc...
