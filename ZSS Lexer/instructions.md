@@ -27,7 +27,7 @@ If done correctly the lexer should already be working.
 ![gg](images/lexerexample.png)
 
 
-### Tips and QOL
+### Tips and QOL (Optional)
 
 1. If you experience High CPU usage at some point, you decrease the "offset" vairable inside "global settings" in the "EnhanceAnyLexerConfig.ini".
 ![gg](images/offset.png)
