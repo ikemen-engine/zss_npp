@@ -18,7 +18,7 @@
 
 ![gg](images/enhance_current.png)
 
-3. Now, replace ALL contents inside ```EnhanceAnyLexerConfig.ini``` with your ```ZSS Lexer.ini```, Then save the your ```EnhanceAnyLexerConfig.ini``` file that's currently open.
+3. Now, replace ALL contents inside ```EnhanceAnyLexerConfig.ini``` with your ```ZSS Lexer.ini```, Then save the your ```EnhanceAnyLexerConfig.ini``.
 
 ![gg](images/replace.png)
 
