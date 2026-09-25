@@ -547,6 +547,7 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="slidetime"/>
 		<KeyWord name="ctrltime"/>
 		<KeyWord name="recovertime"/>
+		<KeyWord name="animLoopCount"/>
 		<KeyWord name="xoff"/>
 		<KeyWord name="yoff"/>
 		<KeyWord name="xvel"/>
@@ -742,7 +743,6 @@ id, isbound, recovertime, slidetime, xoff, xvel, yaccel,
 		<KeyWord name="xAngle"/>
 		<KeyWord name="yAngle"/>
 		<KeyWord name="xShear"/>
-		<KeyWord name="drawPal"/>
 		<KeyWord name="debugMode"/>
 		<KeyWord name="roundsWon"/>
 		<KeyWord name="animElemVar" func="yes">
